@@ -1,0 +1,19 @@
+def modify_string(input_str):
+
+    if not isinstance(input_str, str):
+        return 
+    
+    modified_str = ""
+    
+    for char in input_str:
+        if char.isupper():
+            # Add space and convert to lowercase
+            modified_str += " " + char.lower()  
+        else:
+            modified_str += char
+    
+    return modified_str # Remove any leading space
+
+# print
+result = modify_string("helloWorldThere")
+print(result)  
